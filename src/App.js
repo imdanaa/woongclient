@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import AWS from 'aws-sdk'
+
+const S3_BUCKET = 'woongbucket1'
+const REGION = 'ap-northeast-2'
 
 function App() {
   const [users, setUsers] = useState([]); // 사용자 데이터를 상태로 저장
